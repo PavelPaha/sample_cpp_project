@@ -3,7 +3,7 @@ project(sample_cpp_project)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(main main.cpp my_add.cpp)
+add_executable(main main.cpp src/my_add.cpp)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -15,9 +15,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-include_directories(${CMAKE_BINARY_DIR}/_deps/googletest-src/googletest/include)
-
-add_executable(tests test_add.cpp my_add.cpp)
+add_executable(tests tests/test_add.cpp src/my_add.cpp)
 
 target_link_libraries(tests gtest gtest_main)
 include(GoogleTest)
