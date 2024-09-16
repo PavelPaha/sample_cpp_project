@@ -3,7 +3,7 @@
 
 static void Bench(benchmark::State& state) {
     for (auto _ : state) {
-        add(10000, 10000);
+        slow_add(10000, 10000);
     }
 }
 

@@ -1,0 +1,16 @@
+# Project related settings
+PROJECT_NAME           = "Sample C++ Project"
+OUTPUT_DIRECTORY       = "docs"
+INPUT                  = src
+RECURSIVE              = YES
+
+# Output format
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+
+# Path for output
+HTML_OUTPUT            = html
+
+# Set to YES to extract all comments from the source files
+EXTRACT_ALL            = YES
